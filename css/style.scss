@@ -39,6 +39,13 @@ li {
     justify-content: space-between;
     position: relative;
     padding: 10px 20px;
+    @media (min-width: 768px) {
+      padding: 10px 35px;
+    }
+    @media (min-width: 1024px) {
+      width: 85%;
+      margin: 0 auto;
+    }
   }
 }
 
@@ -53,6 +60,12 @@ li {
   font-family: "Nunito", sans-serif;
   font-style: italic;
   color: rgb(62, 186, 97);
+  @media (min-width: 768px) {
+    font-size: 35px;
+  }
+  @media (min-width: 1024px) {
+    font-size: 40px;
+  }
 }
 
 .second {
@@ -72,11 +85,18 @@ li {
   transition: 200ms cubic-bezier(0.31, 0.76, 1, 0.94) 200ms;
   z-index: 9;
   margin: auto 0;
+  @media (min-width: 1024px) {
+    display: none;
+  }
 
   svg {
     width: 35px;
     height: 35px;
     fill: #333;
+    @media (min-width: 768px) {
+      width: 40px;
+      height: 40px;
+    }
   }
 }
 
@@ -98,20 +118,48 @@ li {
   opacity: 0;
   visibility: hidden;
   transition: 800ms;
+  @media (min-width: 1024px) {
+    opacity: 1;
+    padding: 0;
+    background-color: transparent;
+    box-shadow: none;
+    width: 530px;
+    position: initial;
+    pointer-events: initial;
+    visibility: visible;
+    transition: initial;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+  }
 
   li {
     padding: 5px 40px 5px 40px;
+    @media (min-width: 1024px) {
+      border: 2px solid transparent;
+      border-radius: 5px;
+      padding:  7px 14px;
+      transition: 200ms ease-in 200ms;
+      &:hover {
+        border: 2px solid #c7e4f5;
+        color: #87c8ee;
+      }
+    }
     a {
       font-family: "Poppins", sans-serif;
-    font-size: 18px;
-    font-weight: 500;
-    text-transform: capitalize;
-    
-    color: #222;
+      font-size: 18px;
+      font-weight: 500;
+      text-transform: capitalize;
+
+      color: #333;
     }
     &:last-child {
       padding-bottom: 30px;
+      @media (min-width: 1024px) {
+        padding:  7px 14px;
     }
+  }
   }
 }
 
@@ -125,25 +173,48 @@ li {
 
 // main
 .first_section {
-  background-color: #d0ecfb;
+  background-color: #e1f4ff;
   min-width: 100vw;
-  padding: 135px 5px 45px;
-
-  .flora_plus_img {
-    width: 75%;
-    display: block;
-    margin: 0 auto;
+  padding: 100px 5px 25px;
+  @media (min-width: 768px) {
+    padding: 100px 15px 25px;
   }
-  .first_section_text {
-    width: 90%;
-    margin: 0 auto;
+
+  .wrapper10 {
     h2 {
-      font-size: 25px;
+      font-size: 30px;
       font-family: $titleText;
       font-weight: 600;
       color: #555;
       text-align: center;
       margin-bottom: 10px;
+      width: 339px;
+      @media (min-width: 1024px) {
+        font-size: 40px;
+        margin: 0 auto;
+      }
+    }
+    @media (min-width: 768px) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .flora_plus_img {
+    width: 75%;
+    display: block;
+    margin: 0 auto;
+    @media (min-width: 768px) {
+      width: 45%;
+    }
+  }
+  .first_section_text {
+    width: 90%;
+    margin: 0 auto;
+    @media (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
     }
     p {
       font-size: 19px;
@@ -151,6 +222,16 @@ li {
       text-align: left;
       padding: 20px 0px 20px 70px;
       color: #333;
+
+      @media (min-width: 768px) {
+        width: 31%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        @media (min-width: 1024px) {
+          font-size: 23px;
+        }
+      }
     }
     .text1 {
       background: url(../img/one-2.png) left no-repeat;
@@ -196,6 +277,10 @@ li {
   border: none;
   cursor: pointer;
   border-radius: 50%;
+  @media (min-width: 768px) {
+    top: 85%;
+    left: 85%;
+  }
 }
 .pulse::before,
 .pulse::after {
@@ -253,6 +338,9 @@ li {
   position: relative;
   z-index: 1;
   padding: 0px 15px;
+  @media (min-width: 768px) {
+    padding: 0px 30px;
+  }
   h2 {
     font-size: 30px;
     font-family: $titleText;
@@ -260,16 +348,26 @@ li {
     font-style: italic;
     padding: 20px;
     padding-top: 95px;
+    @media (min-width: 768px) {
+      font-size: 35px;
+    }
+    @media (min-width: 1024px) {
+      font-size: 40px;
+    }
   }
   h3 {
     font-size: 19px;
     font-family: $mainText;
     color: #444;
     margin-bottom: 20px;
+    @media (min-width: 768px) {
+      font-size: 22px;
+    }
+    @media (min-width: 1024px) {
+      font-size: 25px;
+    }
   }
-  .text6 {
-  
-  }
+
   p {
     font-family: $mainText;
     font-size: 17px;
@@ -277,134 +375,179 @@ li {
     padding: 5px 0px 5px 20px;
     position: relative;
     &::before {
-      content: '~';
+      content: "~";
       display: block;
       position: absolute;
       left: 0;
     }
+    @media (min-width: 1024px) {
+      font-size: 25px;
+    }
   }
-    
-  .titl34{
+
+  .titl34 {
     padding-top: 0;
   }
+}
+.card_wrapper {
+  padding-top: 95px;
+}
 
-  }
-  .card_wrapper{
-    padding-top: 95px;
-  }
-  .dfgh_card {
+.wrapper15 {
+  @media (min-width: 768px) {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 15px;
-    padding: 3px;
-    width: 98%;
-    box-shadow: 5px 5px 10px #777;
-    border-radius: 5px;
-    p {
-      width: 35%;
-      text-align: center;
-    }
-    img {
-      display: block;
-      width: 60%;
-      border-radius: 5px;
+  }
+}
+
+.dfgh_card {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  padding: 3px;
+  width: 98%;
+  box-shadow: 5px 5px 10px #777;
+  border-radius: 5px;
+  @media (min-width: 768px) {
+    width: 48%;
+  }
+  p {
+    width: 35%;
+    text-align: center;
+    @media (min-width: 768px) {
+      display: flex;
+      align-items: center;
     }
   }
+  img {
+    display: block;
+    width: 60%;
+    border-radius: 5px;
+  }
+}
 
-  .wrapper6 {
-    padding-top: 95px;
+.wrapper6 {
+  padding-top: 95px;
+}
+
+.why_we {
+  width: 95%;
+  background: rgba(232, 242, 247, 0.863);
+  box-shadow: 5px 5px 10px #333;
+  margin: 0 auto 30px;
+  border-radius: 5px;
+  padding: 15px;
+  @media (min-width: 768px) {
+    padding: 25px;
   }
 
-  .why_we {
-    width: 95%;
- 
-    height: 500px;
-    background: rgba(232, 242, 247, 0.863);
-    box-shadow: 5px 5px 10px #333;
-    margin: 0 auto 30px;
-    border-radius: 5px;
-    padding: 15px;
-    h2 {
-      font-size: 30px;
+  h2 {
+    font-size: 30px;
     font-family: $titleText;
     font-weight: 700;
     font-style: italic;
     padding: 20px;
+    @media (min-width: 1024px) {
+      font-size: 45px;
+    }
+  }
+  p {
+    font-size: 18px;
+    font-family: $smallTitls;
+    font-weight: 500;
+    text-align: left;
+    color: #333;
+    @media (min-width: 1024px) {
+      font-size: 25px;
+    }
+  }
+}
+
+.statement {
+  background: whitesmoke;
+  width: 90%;
+  margin: 20px auto 30px;
+  padding: 20px 10px;
+  box-shadow: 1px 1px 6px #5555;
+  border-radius: 3px 50px;
+  h2 {
+    font-size: 25px;
+    font-family: $titleText;
+    color: #555;
+    font-style: italic;
+    text-align: center;
+    @media (min-width: 1024px) {
+      font-size: 29px;
+    }
+  }
+}
+
+.footer {
+  width: 100vw;
+  background-color: #555;
+  p {
+    font-family: $mainText;
+    font-weight: 200;
+    text-transform: uppercase;
+    font-size: 45px;
+    color: #333;
+    padding: 10px;
+    @media (min-width: 768px) {
+      font-size: 53px;
+    }
+    @media (min-width: 768px) {
+      font-size: 63px;
+    }
+  }
+}
+.addresses_wrapper {
+  background-color: #555;
+  padding: 30px 10px;
+  display: flex;
+  justify-content: space-between;
+  div {
+    width: 45%;
+    @media (min-width: 768px) {
+      width: 47%;
+    }
+    h4 {
+      font-family: $mainText;
+      font-size: 15px;
+      color: #fff;
+      @media (min-width: 1024px) {
+        font-size: 23px;
+      }
     }
     p {
-      font-size: 18px;
-      font-family: $smallTitls;
-      font-weight: 500;
-      text-align: left;
-      color: #333;
+      font-family: $mainText;
+      color: #fff;
+      font-size: 13px;
+      font-style: italic;
+      @media (min-width: 1024px) {
+        font-size: 20px;
+      }
     }
-
   }
+}
 
-  .statement {
-
-    background: whitesmoke;
-    width: 90%;
-    height: 110px;
-    margin: 20px auto 30px;
-    padding: 20px 10px;
-    box-shadow: 1px 1px 6px #5555;
-    border-radius: 3px 50px;
-      h2 {
-        font-size: 25px;
-        font-family: $titleText;
-        color: #555;
-        font-style: italic;
-        text-align: center;
-      }
-      
+.address_div {
+  padding: 10px 20px 40px 10px;
+  h4 {
+    font-family: $mainText;
+    font-size: 15px;
+    color: #fff;
+    @media (min-width: 1024px) {
+      font-size: 23px;
     }
-
-    .footer {
-      width: 100vw;
-      background-color: #555;
-      p {
-        font-family: $mainText;
-        font-weight: 200;
-        text-transform: uppercase;
-        font-size: 45px;
-        color: #333;
-        padding: 10px;
-      }
+  }
+  p {
+    font-family: $mainText;
+    color: #fff;
+    font-size: 13px;
+    font-style: italic;
+    @media (min-width: 1024px) {
+      font-size: 20px;
     }
-    .addresses_wrapper {
-      background-color: #555;
-      padding: 30px 10px;
-      display: flex;
-      justify-content: space-between;
-      div {
-        width: 45%;
-        h4 {
-          font-family: $mainText;
-          font-size: 15px;
-          color: #fff;
-        }
-        p {
-          font-family: $mainText;
-          color: #fff;
-          font-size: 13px;
-          font-style: italic;
-          
-        }
-      }
-    }
-    .address_div {
-      padding: 10px 20px 40px 10px;
-      h4 {
-        font-family: $mainText;
-        font-size: 15px;
-        color: #fff;
-      }
-      p {
-        font-family: $mainText;
-        color: #fff;
-        font-size: 13px;
-        font-style: italic;
-      }
-    }
-  
+  }
+}

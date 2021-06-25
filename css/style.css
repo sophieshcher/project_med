@@ -34,6 +34,19 @@ li {
   padding: 10px 20px;
 }
 
+@media (min-width: 768px) {
+  .header .navigation {
+    padding: 10px 35px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header .navigation {
+    width: 85%;
+    margin: 0 auto;
+  }
+}
+
 .logo_wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -50,6 +63,18 @@ li {
   font-family: "Nunito", sans-serif;
   font-style: italic;
   color: #3eba61;
+}
+
+@media (min-width: 768px) {
+  .logo {
+    font-size: 35px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .logo {
+    font-size: 40px;
+  }
 }
 
 .second {
@@ -72,10 +97,23 @@ li {
   margin: auto 0;
 }
 
+@media (min-width: 1024px) {
+  .btn_burger {
+    display: none;
+  }
+}
+
 .btn_burger svg {
   width: 35px;
   height: 35px;
   fill: #333;
+}
+
+@media (min-width: 768px) {
+  .btn_burger svg {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .btn_burger:hover {
@@ -99,8 +137,48 @@ li {
   transition: 800ms;
 }
 
+@media (min-width: 1024px) {
+  .menu {
+    opacity: 1;
+    padding: 0;
+    background-color: transparent;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    width: 530px;
+    position: initial;
+    pointer-events: initial;
+    visibility: visible;
+    -webkit-transition: initial;
+    transition: initial;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 85px;
+  }
+}
+
 .menu li {
   padding: 5px 40px 5px 40px;
+}
+
+@media (min-width: 1024px) {
+  .menu li {
+    border: 2px solid transparent;
+    border-radius: 5px;
+    padding: 7px 14px;
+    -webkit-transition: 200ms ease-in 200ms;
+    transition: 200ms ease-in 200ms;
+  }
+  .menu li:hover {
+    border: 2px solid #c7e4f5;
+    color: #87c8ee;
+  }
 }
 
 .menu li a {
@@ -108,11 +186,17 @@ li {
   font-size: 18px;
   font-weight: 500;
   text-transform: capitalize;
-  color: #222;
+  color: #333;
 }
 
 .menu li:last-child {
   padding-bottom: 30px;
+}
+
+@media (min-width: 1024px) {
+  .menu li:last-child {
+    padding: 7px 14px;
+  }
 }
 
 .btn_burger:focus + .menu {
@@ -123,9 +207,46 @@ li {
 }
 
 .first_section {
-  background-color: #d0ecfb;
+  background-color: #e1f4ff;
   min-width: 100vw;
-  padding: 135px 5px 45px;
+  padding: 100px 5px 25px;
+}
+
+@media (min-width: 768px) {
+  .first_section {
+    padding: 100px 15px 25px;
+  }
+}
+
+.first_section .wrapper10 h2 {
+  font-size: 30px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  color: #555;
+  text-align: center;
+  margin-bottom: 10px;
+  width: 339px;
+}
+
+@media (min-width: 1024px) {
+  .first_section .wrapper10 h2 {
+    font-size: 40px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .first_section .wrapper10 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .first_section .flora_plus_img {
@@ -134,18 +255,25 @@ li {
   margin: 0 auto;
 }
 
+@media (min-width: 768px) {
+  .first_section .flora_plus_img {
+    width: 45%;
+  }
+}
+
 .first_section .first_section_text {
   width: 90%;
   margin: 0 auto;
 }
 
-.first_section .first_section_text h2 {
-  font-size: 25px;
-  font-family: "Nunito", sans-serif;
-  font-weight: 600;
-  color: #555;
-  text-align: center;
-  margin-bottom: 10px;
+@media (min-width: 768px) {
+  .first_section .first_section_text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .first_section .first_section_text p {
@@ -154,6 +282,25 @@ li {
   text-align: left;
   padding: 20px 0px 20px 70px;
   color: #333;
+}
+
+@media (min-width: 768px) {
+  .first_section .first_section_text p {
+    width: 31%;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (min-width: 768px) and (min-width: 1024px) {
+  .first_section .first_section_text p {
+    font-size: 23px;
+  }
 }
 
 .first_section .first_section_text .text1 {
@@ -210,6 +357,13 @@ li {
   border: none;
   cursor: pointer;
   border-radius: 50%;
+}
+
+@media (min-width: 768px) {
+  .pulse {
+    top: 85%;
+    left: 85%;
+  }
 }
 
 .pulse::before,
@@ -295,6 +449,12 @@ li {
   padding: 0px 15px;
 }
 
+@media (min-width: 768px) {
+  .dfgh {
+    padding: 0px 30px;
+  }
+}
+
 .dfgh h2 {
   font-size: 30px;
   font-family: "Nunito", sans-serif;
@@ -304,11 +464,35 @@ li {
   padding-top: 95px;
 }
 
+@media (min-width: 768px) {
+  .dfgh h2 {
+    font-size: 35px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .dfgh h2 {
+    font-size: 40px;
+  }
+}
+
 .dfgh h3 {
   font-size: 19px;
   font-family: "Roboto", sans-serif;
   color: #444;
   margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .dfgh h3 {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .dfgh h3 {
+    font-size: 25px;
+  }
 }
 
 .dfgh p {
@@ -321,10 +505,16 @@ li {
 }
 
 .dfgh p::before {
-  content: '~';
+  content: "~";
   display: block;
   position: absolute;
   left: 0;
+}
+
+@media (min-width: 1024px) {
+  .dfgh p {
+    font-size: 25px;
+  }
 }
 
 .dfgh .titl34 {
@@ -333,6 +523,19 @@ li {
 
 .card_wrapper {
   padding-top: 95px;
+}
+
+@media (min-width: 768px) {
+  .wrapper15 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 .dfgh_card {
@@ -350,9 +553,26 @@ li {
   border-radius: 5px;
 }
 
+@media (min-width: 768px) {
+  .dfgh_card {
+    width: 48%;
+  }
+}
+
 .dfgh_card p {
   width: 35%;
   text-align: center;
+}
+
+@media (min-width: 768px) {
+  .dfgh_card p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .dfgh_card img {
@@ -367,13 +587,18 @@ li {
 
 .why_we {
   width: 95%;
-  height: 500px;
   background: rgba(232, 242, 247, 0.863);
   -webkit-box-shadow: 5px 5px 10px #333;
           box-shadow: 5px 5px 10px #333;
   margin: 0 auto 30px;
   border-radius: 5px;
   padding: 15px;
+}
+
+@media (min-width: 768px) {
+  .why_we {
+    padding: 25px;
+  }
 }
 
 .why_we h2 {
@@ -384,6 +609,12 @@ li {
   padding: 20px;
 }
 
+@media (min-width: 1024px) {
+  .why_we h2 {
+    font-size: 45px;
+  }
+}
+
 .why_we p {
   font-size: 18px;
   font-family: "Poppins", sans-serif;
@@ -392,10 +623,15 @@ li {
   color: #333;
 }
 
+@media (min-width: 1024px) {
+  .why_we p {
+    font-size: 25px;
+  }
+}
+
 .statement {
   background: whitesmoke;
   width: 90%;
-  height: 110px;
   margin: 20px auto 30px;
   padding: 20px 10px;
   -webkit-box-shadow: 1px 1px 6px #5555;
@@ -411,6 +647,12 @@ li {
   text-align: center;
 }
 
+@media (min-width: 1024px) {
+  .statement h2 {
+    font-size: 29px;
+  }
+}
+
 .footer {
   width: 100vw;
   background-color: #555;
@@ -423,6 +665,18 @@ li {
   font-size: 45px;
   color: #333;
   padding: 10px;
+}
+
+@media (min-width: 768px) {
+  .footer p {
+    font-size: 53px;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer p {
+    font-size: 63px;
+  }
 }
 
 .addresses_wrapper {
@@ -440,10 +694,22 @@ li {
   width: 45%;
 }
 
+@media (min-width: 768px) {
+  .addresses_wrapper div {
+    width: 47%;
+  }
+}
+
 .addresses_wrapper div h4 {
   font-family: "Roboto", sans-serif;
   font-size: 15px;
   color: #fff;
+}
+
+@media (min-width: 1024px) {
+  .addresses_wrapper div h4 {
+    font-size: 23px;
+  }
 }
 
 .addresses_wrapper div p {
@@ -451,6 +717,12 @@ li {
   color: #fff;
   font-size: 13px;
   font-style: italic;
+}
+
+@media (min-width: 1024px) {
+  .addresses_wrapper div p {
+    font-size: 20px;
+  }
 }
 
 .address_div {
@@ -463,10 +735,22 @@ li {
   color: #fff;
 }
 
+@media (min-width: 1024px) {
+  .address_div h4 {
+    font-size: 23px;
+  }
+}
+
 .address_div p {
   font-family: "Roboto", sans-serif;
   color: #fff;
   font-size: 13px;
   font-style: italic;
+}
+
+@media (min-width: 1024px) {
+  .address_div p {
+    font-size: 20px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
